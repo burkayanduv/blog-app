@@ -4,7 +4,7 @@
 .sidebar {
   @include mixins.flexCenter;
   flex-direction: column;
-  margin: 30px;
+  margin: 10px;
   padding-bottom: 30px;
   background-color: variables.$backgroundColorSidebar;
 }
