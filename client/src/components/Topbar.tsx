@@ -41,7 +41,10 @@ function Topbar() {
                 HOME
               </Link>
             </span>
-            <a className="topLinkItem" href="https://burkayanduv.netlify.app/">
+            <a
+              className="topLinkItem"
+              href="https://github.com/burkayanduv/blog-app"
+            >
               ABOUT
             </a>
             <a className="topLinkItem" href="https://burkayanduv.netlify.app/">
