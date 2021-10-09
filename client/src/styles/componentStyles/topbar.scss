@@ -1,0 +1,53 @@
+@use '../mixins';
+@use '../variables';
+
+.top {
+  height: 60px;
+  background-color: variables.$backgroundColorTopbar;
+  font-family: variables.$font1;
+}
+
+.topLeft {
+  width: 0px;
+  background-color: variables.$backgroundColorTopbar;
+  margin: 5px 0px;
+  padding: 5px 15px;
+}
+
+.topRight {
+  position: absolute;
+  right: 20px;
+}
+
+.topIcon {
+  font-size: 20px;
+  margin: 0px 5px;
+  color: variables.$titleColor;
+  cursor: pointer;
+}
+
+.topImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.topList {
+  @include mixins.flexCenter;
+  @include mixins.marginPaddingZero;
+  list-style: none;
+}
+
+.topLink {
+  background-color: variables.$backgroundColorTopbar;
+  margin: -10px 0px;
+}
+
+.topLinkItem {
+  margin: 5px 0px 5px 20px;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+}

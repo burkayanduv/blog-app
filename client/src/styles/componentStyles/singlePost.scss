@@ -1,0 +1,95 @@
+@use '../variables';
+
+.singlePostWrapper {
+  margin-top: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.singlePostImg {
+  width: 100%;
+  height: 500px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.singlePostTitle {
+  text-align: center;
+  margin: 10px;
+  font-family: variables.$font3;
+  font-size: 28px;
+}
+
+.singlePostTitleInput {
+  text-align: center;
+  margin: 10px;
+  font-family: variables.$font3;
+  font-size: 28px;
+  color: variables.$titleColor;
+  border: none;
+  border-bottom: 1px solid variables.$borderColor;
+  &:focus {
+    outline: none;
+  }
+}
+
+.singlePostEdit {
+  float: right;
+  font-size: 16px;
+}
+
+.singlePostIcon {
+  margin-left: 10px;
+  cursor: pointer;
+  &:first-child {
+    color: variables.$editIconColor;
+  }
+  &:last-child {
+    color: variables.$deleteIconColor;
+  }
+}
+
+.singlePostInfo {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color: variables.$descColor;
+  font-family: variables.$font2;
+}
+
+.singlePostDesc {
+  color: variables.$bodyColor;
+  font-size: 18px;
+  line-height: 25px;
+  &::first-letter {
+    float: left;
+    font-size: 60px;
+    line-height: 46px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+}
+
+.singlePostDescInput {
+  border: none;
+  color: variables.$bodyColor;
+  font-size: 18px;
+  line-height: 25px;
+  &:focus {
+    outline: none;
+  }
+}
+
+.singlePostButton {
+  width: 100px;
+  border: none;
+  background-color: variables.$backgroundColorButton;
+  padding: 5px;
+  color: variables.$buttonColor;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-top: 20px;
+}

@@ -1,0 +1,64 @@
+@use '../mixins';
+@use '../variables';
+
+.sidebar {
+  @include mixins.flexCenter;
+  flex-direction: column;
+  margin: 30px;
+  padding-bottom: 30px;
+  background-color: variables.$backgroundColorSidebar;
+}
+
+.sidebarItem {
+  @include mixins.flexCenter;
+  flex-direction: column;
+  img {
+    margin-top: 15px;
+    height: 350px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  p {
+    padding: 30px;
+    font-family: variables.$font2;
+  }
+}
+
+.sidebarTitle {
+  margin: 10px;
+  padding: 10px;
+  width: 100%;
+  border-top: 1px solid variables.$borderColor;
+  border-bottom: 1px solid variables.$borderColor;
+  font-family: variables.$font1;
+  color: variables.$titleColor2;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+}
+
+.sidebarList {
+  font-family: variables.$font2;
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.sidebarListItem {
+  display: inline-block;
+  width: 50%;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.sidebarSocial {
+  margin-top: 15px;
+  @include mixins.flexCenter;
+  justify-content: center;
+}
+
+.sidebarIcon {
+  font-size: 16px;
+  margin: 0px 5px;
+  cursor: pointer;
+}

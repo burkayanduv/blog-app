@@ -1,0 +1,50 @@
+@use '../mixins';
+@use '../variables';
+
+.login {
+  height: calc(100vh - 60px);
+  @include mixins.flexCenter;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url('https://images.pexels.com/photos/7911758/pexels-photo-7911758.jpeg?cs=srgb&dl=pexels-rodion-kutsaiev-7911758.jpg&fm=jpg');
+  background-size: cover;
+  background-position: 50% 30%;
+  font-family: variables.$font3;
+}
+
+.loginTitle {
+  font-size: 50px;
+}
+
+.loginForm {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  label {
+    margin: 10px 0;
+  }
+}
+
+.loginInput {
+  padding: 10px;
+  background-color: variables.$backgroundColorTopbar;
+  border: none;
+}
+
+.loginButton {
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: variables.$loginButton;
+  border: none;
+  color: variables.$buttonColor;
+  border-radius: 10px;
+  padding: 10px;
+  &:disabled {
+    cursor: not-allowed;
+    background-color: variables.$loginButtonDisabled;
+  }
+}

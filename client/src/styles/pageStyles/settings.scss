@@ -1,0 +1,85 @@
+@use '../mixins';
+@use '../variables';
+
+.settingsWrapper {
+  padding: 20px;
+}
+
+.settingsTitle {
+  @include mixins.flexCenter;
+  justify-content: space-between;
+}
+
+.settingsUpdateTitle {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: variables.$titleColorSettings;
+}
+
+.settingsDeleteTitle {
+  color: variables.$titleColorDelete;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.settingsForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.settingsPP {
+  @include mixins.flexCenter;
+  margin: 10px 0px;
+  img {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+}
+
+.settingsPPIcon {
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: variables.$titleColorSettings;
+  color: variables.$buttonColor;
+  @include mixins.flexCenter;
+  justify-content: center;
+  margin-left: 10px;
+  margin-top: -20px;
+  cursor: pointer;
+}
+
+.settingsForm {
+  label {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  input {
+    color: variables.$titleColor;
+    margin: 10px 0;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid variables.$borderColor;
+  }
+}
+
+.settingsSubmit {
+  width: 150px;
+  align-self: center;
+  border: none;
+  border-radius: 10px;
+  color: variables.$buttonColor;
+  background-color: variables.$backgroundColorButton;
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.settingsSuccessText {
+  color: variables.$successText;
+  text-align: center;
+  margin-top: 20px;
+}

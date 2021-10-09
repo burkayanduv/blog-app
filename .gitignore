@@ -1,0 +1,15 @@
+# dependencies
+/api/node_modules
+/client/node_modules
+
+# testing
+/coverage
+
+# production
+/api/build
+/client/build
+
+# misc
+.env
+yarn.lock
+package-lock.json

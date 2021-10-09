@@ -1,0 +1,61 @@
+@use '../mixins';
+@use '../variables';
+
+.post {
+  width: 410px;
+  margin: 20px 25px 40px 25px;
+}
+
+.postImg {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.postInfo {
+  @include mixins.flexCenter;
+  flex-direction: column;
+  a {
+    text-align: center;
+  }
+}
+
+.postCat {
+  font-family: variables.$font2;
+  font-size: 11px;
+  color: variables.$descColor;
+  line-height: 20px;
+  margin-top: 15px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.postTitle {
+  font-family: variables.$font1;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.postDate {
+  font-family: variables.$font3;
+  font-style: italic;
+  font-size: 13px;
+  color: variables.$dateColor;
+  margin-top: -30px;
+}
+
+.postDesc {
+  font-family: variables.$font2;
+  font-size: 14px;
+  color: variables.$titleColor;
+  line-height: 24px;
+  margin-top: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}

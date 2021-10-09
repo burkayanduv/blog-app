@@ -1,0 +1,78 @@
+@use '../mixins';
+@use '../variables';
+
+.write {
+  padding-top: 50px;
+}
+
+.writeImg {
+  margin-left: 150px;
+  width: 70vw;
+  height: 450px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.writeForm {
+  position: relative;
+}
+
+.writeFormGroup {
+  margin-left: 150px;
+  @include mixins.flexCenter;
+}
+
+.writeIcon {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid;
+  @include mixins.flexCenter;
+  justify-content: center;
+  color: variables.$bodyColor;
+  cursor: pointer;
+}
+
+.writeCategory {
+  color: variables.$buttonColor;
+  background-color: variables.$descColor;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 20px;
+}
+
+.writeCheckbox {
+  margin-left: 10px;
+  margin-right: 8px;
+}
+
+.writeInput {
+  font-size: 30px;
+  border: none;
+  padding: 20px;
+  width: 70vw;
+  &:focus {
+    outline: none;
+  }
+}
+
+.writeText {
+  font-size: 20px;
+  height: 70vh;
+}
+
+.writeSubmit {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  color: variables.$buttonColor;
+  background-color: variables.$backgroundColorButton;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
